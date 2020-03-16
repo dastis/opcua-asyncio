@@ -345,6 +345,10 @@ class Node:
         pass
 
     get_value = read_value  # legacy
+	
+	@syncmethod
+    def get_data_value(self):
+        pass
 
     @syncmethod
     def call_method(self, methodid, *args):
